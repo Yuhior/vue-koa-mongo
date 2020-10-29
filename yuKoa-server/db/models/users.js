@@ -14,7 +14,7 @@ const usersSchema = new Schema({
     alias_name:String,
     mobile: String,
     password: String,
-    userType: Number,  // 用户角色
+    userType: String,  // 用户角色
     school_type:String,
     email: String,
     family_name: String,

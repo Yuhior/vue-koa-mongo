@@ -1,6 +1,8 @@
 const UsersCtl  =require('./controllers/user')
+const GetPermissionCtl = require('./controllers/routers')
 module.exports = {
-    getUsers: UsersCtl
+    getUsers: UsersCtl,
+    getRouters:GetPermissionCtl
 }
 
 

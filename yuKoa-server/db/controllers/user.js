@@ -34,10 +34,9 @@ class UsersCtl {
           console.log("服务器出现异常，请重启服务器......");
         });
         
-        //console.log(result);
-        return !result ? {code:-2 ,msg :'密码不正确'} : {code:200, _id: usersDoc._id,username: usersDoc.username,avatar: usersDoc.avatar, mobile: usersDoc.mobile,email: usersDoc.email}
+        return !result ? {code:-2 ,msg :'密码不正确'} : {code:200, _id: usersDoc._id,username: usersDoc.username,avatar: usersDoc.avatar, mobile: usersDoc.mobile,email: usersDoc.email,userRoles:usersDoc.userType}
     }
-    async userRegister(obj) { // 用户登陆的方法
+    async userRegister(obj) { // 用户注册的方法
         let {alias_name,password,mobile,school_type}  = obj;
         const usersDoc = await UsersModel.findOne({mobile});
         if (usersDoc) {
