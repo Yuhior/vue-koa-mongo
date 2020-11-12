@@ -1,4 +1,4 @@
-### vue+koa+mongodb 实现前后台分离
+### vue+koa+mongodb 实现前后台分离实现一个简易后台管理
 使用vue + koa + mongo  做的前后台分离的 登陆和注册 ，外加了token和登陆状态的存储
 
 #### koa-client
